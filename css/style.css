@@ -1,1 +1,1080 @@
+/* ==========================================================
+   LEO JAEGER — GLOBAL STYLESHEET
+   Version: 1.0
+   ----------------------------------------------------------
+   This file contains ONLY universal styles shared by every
+   page of the website.
+
+   Structure
+
+   1. Reset
+   2. Font Definitions
+   3. Design Variables
+   4. Global Elements
+
+========================================================== */
+
+
+
+/* ==========================================================
+   1. RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+textarea,
+select{
+    font:inherit;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+
+
+/* ==========================================================
+   2. FONT DEFINITIONS
+
+   Download these later into:
+
+   assets/fonts/
+
+========================================================== */
+
+/*
+
+@font-face{
+
+    font-family:"Cormorant";
+
+    src:url("../assets/fonts/CormorantGaramond-Regular.woff2")
+    format("woff2");
+
+    font-weight:400;
+
+}
+
+@font-face{
+
+    font-family:"Cormorant";
+
+    src:url("../assets/fonts/CormorantGaramond-Bold.woff2")
+    format("woff2");
+
+    font-weight:700;
+
+}
+
+@font-face{
+
+    font-family:"Source Sans";
+
+    src:url("../assets/fonts/SourceSans3-Regular.woff2")
+    format("woff2");
+
+    font-weight:400;
+
+}
+
+*/
+
+/* ==========================================================
+   3. DESIGN VARIABLES
+========================================================== */
+
+:root{
+
+    /* ======================================================
+       COLOR PALETTE
+    ====================================================== */
+
+    --background:#F7F5F0;
+    --surface:#FFFFFF;
+    --surface-alt:#F1EEE7;
+    --text:#2E2E2E;
+    --text-light:#666666;
+
+    /* Fantasy */
+
+    --hill-green:#6C8B57;
+    --banner-blue:#4E73A8;
+    --bronze:#8C6B43;
+    --mountain-white:#FDFDFB;
+
+    /* Cyberpunk */
+
+    --led-green:#49C97A;
+    --fiber-cyan:#59D6D6;
+    --neon-gold:#E5C469;
+    --steel:#6F757B;
+
+    /* Universal */
+
+    --border:#DDDDDD;
+    --shadow:
+        0 10px 35px rgba(0,0,0,.08);
+
+    /* ======================================================
+       TYPOGRAPHY
+    ====================================================== */
+
+    --font-heading:
+        "Cormorant",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    --font-body:
+        "Source Sans",
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    /* ======================================================
+       SPACING
+    ====================================================== */
+
+    --space-xs:.5rem;
+    --space-sm:1rem;
+    --space-md:2rem;
+    --space-lg:4rem;
+    --space-xl:7rem;
+
+    /* ======================================================
+       LAYOUT
+    ====================================================== */
+
+    --container-width:1200px;
+    --reading-width:72ch;
+    --hero-height:90vh;
+
+    /* ======================================================
+       COMPONENTS
+    ====================================================== */
+
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --transition:.25s ease;
+}
+
+/* ==========================================================
+   4. GLOBAL ELEMENTS
+========================================================== */
+
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:var(--font-body);
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* ---------- Text Selection ---------- */
+
+::selection{
+    background:var(--banner-blue);
+    color:white;
+}
+
+/* ---------- Images ---------- */
+
+img{
+    border-radius:var(--radius-sm);
+}
+
+/* ---------- Horizontal Rule ---------- */
+
+hr{
+    border:none;
+    height:1px;
+    background:var(--border);
+}
+
+/* ---------- Containers ---------- */
+
+.container{
+    width:min(
+        var(--container-width),
+        92%
+    );
+    margin-inline:auto;
+}
+
+/* ---------- Generic Sections ---------- */
+
+section{
+    padding:
+        var(--space-xl)
+        0;
+}
+
+/* ---------- Generic Links ---------- */
+
+a{
+    transition:var(--transition);
+}
+
+/* ---------- Focus Accessibility ---------- */
+
+:focus-visible{
+    outline:2px solid var(--banner-blue);
+    outline-offset:4px;
+}
+
+/*
+/* ==========================================================
+   5. TYPOGRAPHY
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   Headings
+---------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:var(--font-heading);
+    font-weight:700;
+    color:var(--text);
+    line-height:1.15;
+    letter-spacing:.02em;
+    margin-bottom:var(--space-sm);
+}
+
+/* Hero title */
+
+h1{
+    font-size:clamp(3rem,6vw,5.5rem);
+}
+
+/* Section titles */
+
+h2{
+    font-size:clamp(2rem,4vw,3rem);
+}
+
+/* Card titles */
+
+h3{
+    font-size:clamp(1.5rem,2vw,2rem);
+}
+
+/* Small headings */
+
+h4{
+    font-size:1.35rem;
+}
+
+h5{
+    font-size:1.15rem;
+}
+
+h6{
+    font-size:1rem;
+}
+
+/* ----------------------------------------------------------
+   Paragraphs
+---------------------------------------------------------- */
+
+p{
+    max-width:var(--reading-width);
+    margin-bottom:var(--space-md);
+    color:var(--text-light);
+}
+
+/* ----------------------------------------------------------
+   Lists
+---------------------------------------------------------- */
+
+main ul{
+    list-style:disc;
+    margin-left:2rem;
+    margin-bottom:var(--space-md);
+}
+
+main ol{
+    margin-left:2rem;
+    margin-bottom:var(--space-md);
+}
+
+/* ----------------------------------------------------------
+   Links
+---------------------------------------------------------- */
+
+a{
+    color:inherit;
+    transition:var(--transition);
+}
+
+a:hover{
+    color:var(--banner-blue);
+}
+
+/* ----------------------------------------------------------
+   Strong / Emphasis
+---------------------------------------------------------- */
+
+strong{
+    color:var(--text);
+    font-weight:700;
+}
+
+em{
+    font-style:italic;
+}
+
+/* ----------------------------------------------------------
+   Blockquotes
+---------------------------------------------------------- */
+
+blockquote{
+    max-width:var(--reading-width);
+    margin:
+        var(--space-lg)
+        auto;
+    padding-left:2rem;
+    border-left:
+        4px solid
+        var(--banner-blue);
+    font-family:var(--font-heading);
+    font-size:1.5rem;
+    font-style:italic;
+    color:var(--text);
+}
+
+/* ----------------------------------------------------------
+   Code
+---------------------------------------------------------- */
+
+code{
+    font-family:
+        Consolas,
+        monospace;
+    background:
+        var(--surface-alt);
+    padding:
+        .15rem
+        .35rem;
+    border-radius:
+        var(--radius-sm);
+}
+
+/* ==========================================================
+   6. LAYOUT
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   Main Layout
+---------------------------------------------------------- */
+
+main{
+    width:100%;
+}
+
+/* Generic section */
+
+section{
+    width:100%;
+}
+
+/* Standard container */
+
+.container{
+    width:min(
+        var(--container-width),
+        92%
+    );
+    margin-inline:auto;
+}
+
+/* ----------------------------------------------------------
+   Flex Helpers
+---------------------------------------------------------- */
+
+.flex{
+    display:flex;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+/* ----------------------------------------------------------
+   Grid Helpers
+---------------------------------------------------------- */
+
+.grid{
+    display:grid;
+}
+
+.two-columns{
+    display:grid;
+    grid-template-columns:
+        repeat(2,1fr);
+    gap:3rem;
+}
+
+.three-columns{
+    display:grid;
+    grid-template-columns:
+        repeat(3,1fr);
+    gap:2rem;
+}
+
+/* ----------------------------------------------------------
+   Generic Cards
+---------------------------------------------------------- */
+
+.card{
+    background:
+        var(--surface);
+    border-radius:
+        var(--radius-md);
+    box-shadow:
+        var(--shadow);
+    padding:
+        2rem;
+}
+
+/* ----------------------------------------------------------
+   Images
+---------------------------------------------------------- */
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ----------------------------------------------------------
+   Generic Separators
+---------------------------------------------------------- */
+
+.section-title{
+    text-align:center;
+    margin-bottom:
+        var(--space-lg);
+}
+
+.section-subtitle{
+    text-align:center;
+    max-width:50rem;
+    margin:
+        0 auto
+        var(--space-lg);
+}
+
+/* ----------------------------------------------------------
+   Reading Width
+---------------------------------------------------------- */
+
+.reading{
+    max-width:
+        var(--reading-width);
+}
+
+/* ----------------------------------------------------------
+   Smooth Fade Utility
+---------------------------------------------------------- */
+
+.fade{
+    opacity:0;
+    transition:
+        opacity .6s ease;
+}
+
+.fade.show{
+    opacity:1;
+}
+
+/* ==========================================================
+   7. NAVIGATION
+========================================================== */
+
+/* ----------------------------------------------------------
+   Header
+---------------------------------------------------------- */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:
+        rgba(247,245,240,.94);
+    backdrop-filter:blur(12px);
+    border-bottom:
+        1px solid
+        rgba(0,0,0,.06);
+}
+
+/* ----------------------------------------------------------
+   Navigation Container
+---------------------------------------------------------- */
+
+nav{
+    width:min(
+        var(--container-width),
+        92%
+    );
+
+    height:82px;
+    margin-inline:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* ----------------------------------------------------------
+   Logo
+---------------------------------------------------------- */
+
+.logo{
+    font-family:
+        var(--font-heading);
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    color:var(--text);
+    transition:
+        var(--transition);
+}
+
+.logo:hover{
+    color:
+        var(--banner-blue);
+}
+
+/* ----------------------------------------------------------
+   Navigation List
+---------------------------------------------------------- */
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:2.5rem;
+}
+
+/* ----------------------------------------------------------
+   Navigation Links
+---------------------------------------------------------- */
+
+nav li{
+    list-style:none;
+}
+
+nav a{
+    position:relative;
+    color:var(--text);
+    font-size:1rem;
+    font-weight:600;
+}
+
+/* ----------------------------------------------------------
+   Animated Underline
+---------------------------------------------------------- */
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:
+        var(--banner-blue);
+    transition:
+        width .25s ease;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* ----------------------------------------------------------
+   Current Page
+---------------------------------------------------------- */
+
+nav a.active{
+    color:
+        var(--banner-blue);
+}
+
+nav a.active::after{
+    width:100%;
+}
+
+
+/* ==========================================================
+   8. BUTTONS
+========================================================== */
+
+/* ----------------------------------------------------------
+   Shared Button Style
+---------------------------------------------------------- */
+
+.button{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    gap:.6rem;
+    cursor:pointer;
+    padding:
+        .9rem
+        1.8rem;
+    border-radius:
+        var(--radius-md);
+    transition:
+        var(--transition);
+    font-weight:600;
+}
+
+/* ----------------------------------------------------------
+   Primary
+---------------------------------------------------------- */
+
+.button.primary{
+    background:
+        var(--banner-blue);
+    color:white;
+    box-shadow:
+        var(--shadow);
+}
+
+.button.primary:hover{
+    transform:
+        translateY(-3px);
+    background:
+        #41689E;
+}
+
+/* ----------------------------------------------------------
+   Secondary
+---------------------------------------------------------- */
+
+.button.secondary{
+    border:
+        2px solid
+        var(--banner-blue);
+    color:
+        var(--banner-blue);
+}
+
+
+.button.secondary:hover{
+    background:
+        var(--banner-blue);
+    color:white;
+}
+
+/* ----------------------------------------------------------
+   Ghost Button
+---------------------------------------------------------- */
+
+.button.ghost{
+    color:
+        var(--text);
+}
+
+
+.button.ghost:hover{
+    color:
+        var(--banner-blue);
+}
+
+
+
+/* ----------------------------------------------------------
+   Cyberpunk Accent
+---------------------------------------------------------- */
+
+.button.cyber{
+    position:relative;
+}
+
+
+.button.cyber::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:0;
+    height:2px;
+    background:
+
+        var(--led-green);
+    transition:
+        .3s ease;
+    transform:
+        translateX(-50%);
+}
+
+
+
+.button.cyber:hover::before{
+    width:85%;
+}
+
+
+
+/* ----------------------------------------------------------
+   Fantasy Accent
+---------------------------------------------------------- */
+
+.button.fantasy:hover{
+    border-color:
+        var(--bronze);
+}
+
+
+
+/* ==========================================================
+   9. CARDS
+========================================================== */
+
+.card{
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
+}
+
+
+
+/* ----------------------------------------------------------
+   Hover Effect
+---------------------------------------------------------- */
+
+.card:hover{
+    transform:
+        translateY(-6px);
+    transition:
+        .3s ease;
+}
+
+
+
+/* ----------------------------------------------------------
+   Images
+---------------------------------------------------------- */
+
+.card img{
+    border-radius:
+        var(--radius-md);
+}
+
+
+
+/* ----------------------------------------------------------
+   World Cards
+---------------------------------------------------------- */
+
+.world-card{
+    overflow:hidden;
+}
+
+
+
+.world-card img{
+    transition:
+        transform .4s ease;
+}
+
+
+
+.world-card:hover img{
+    transform:
+        scale(1.04);
+}
+
+
+/* ----------------------------------------------------------
+   Book Cards
+---------------------------------------------------------- */
+
+.book-card{
+    text-align:center;
+}
+
+
+
+/* ==========================================================
+   10. FOOTER
+========================================================== */
+
+footer{
+    margin-top:
+        var(--space-xl);
+    padding:
+        3rem 0;
+    border-top:
+        1px solid
+        rgba(0,0,0,.08);
+    background:
+        var(--surface);
+}
+
+
+
+footer p{
+    text-align:center;
+    margin:0 auto;
+    color:
+        var(--text-light);
+}
+
+
+
+/* ==========================================================
+   11. UTILITIES
+========================================================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-lg{
+    margin-top:
+        var(--space-lg);
+}
+
+.mb-lg{
+    margin-bottom:
+        var(--space-lg);
+}
+
+.hidden{
+    display:none;
+}
+
+.round{
+    border-radius:
+        var(--radius-lg);
+}
+
+.shadow{
+    box-shadow:
+        var(--shadow);
+}
+
+/* ==========================================================
+   12. RESPONSIVE DESIGN
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   Large Tablets
+---------------------------------------------------------- */
+
+@media (max-width: 1200px){
+
+    :root{
+        --space-xl:6rem;
+        --space-lg:3rem;
+    }
+
+    nav{
+        width:94%;
+    }
+
+    .container{
+        width:94%;
+    }
+}
+
+
+
+/* ----------------------------------------------------------
+   Tablets
+---------------------------------------------------------- */
+
+@media (max-width: 900px){
+
+    body{
+        font-size:17px;
+    }
+
+    nav{
+        flex-direction:column;
+        justify-content:center;
+        gap:1rem;
+        height:auto;
+        padding:1.25rem 0;
+    }
+
+    nav ul{
+        gap:1.5rem;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .two-columns{
+        grid-template-columns:1fr;
+    }
+
+    .three-columns{
+        grid-template-columns:1fr 1fr;
+    }
+
+    h1{
+        text-align:center;
+    }
+
+    h2{
+        text-align:center;
+    }
+    p{
+        max-width:none;
+    }
+}
+
+
+
+/* ----------------------------------------------------------
+   Mobile Phones
+---------------------------------------------------------- */
+
+@media (max-width:600px){
+
+    body{
+        font-size:16px;
+    }
+
+    section{
+        padding:
+            var(--space-lg)
+            0;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:.9rem;
+    }
+
+    .three-columns{
+        grid-template-columns:1fr;
+    }
+
+    .button{
+        width:100%;
+    }
+
+    .card{
+        padding:1.5rem;
+    }
+
+    h1{
+        font-size:2.8rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+}
+
+
+
+/* ----------------------------------------------------------
+   Small Phones
+---------------------------------------------------------- */
+
+@media (max-width:400px){
+
+    body{
+        font-size:15px;
+    }
+
+    .container{
+        width:96%;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+}
+
+/* ==========================================================
+   OPTIONAL MICRO-ANIMATIONS
+========================================================== */
+
+html{
+    scroll-padding-top:90px;
+}
+
+section{
+    transition:
+        opacity .5s ease,
+        transform .5s ease;
+}
+
+img{
+    transition:
+        transform .35s ease;
+}
+
+img:hover{
+    transform:scale(1.01);
+}
+
+button,
+.button{
+    will-change:transform;
+}
+
+::selection{
+    background:var(--banner-blue);
+    color:white;
+}
+
+
 
