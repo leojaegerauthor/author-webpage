@@ -10,9 +10,7 @@
             </h1>
 
             <p>
-                Explore cultures
-                Experience humanity
-                Live in new worlds.
+                Explore cultures • Experience humanity • Live in new worlds.
             </p>
 
             <div class="hero-buttons">
@@ -49,7 +47,7 @@
             </h2>
 
             <p>
-                See how people make choices
+                Enjoy the thematic unison
             </p>
         </div>
 
@@ -57,11 +55,11 @@
             <!-- Cyberpunk -->
             <article class="card world-card">
                 <img
-                    src="assets/images/cyberpunk.webp"
+                    src="assets/images/cyberpunk.jpg"
                     alt="Cyberpunk">
 
                 <h3>
-                    Cyberpunk
+                    Citizen Zero
                 </h3>
 
                 <p>
@@ -82,7 +80,7 @@
                     alt="Fantasy">
 
                 <h3>
-                    Fantasy
+                    The Sphere
                 </h3>
 
                 <p>
@@ -200,6 +198,3 @@
 
     </div>
 </section>
-
-
-
