@@ -15,6 +15,7 @@
 /* 3. Add a highlight to your world card titles */
 .world-card h3 {
   color: var(--fiber-cyan); /* Colors "Citizen Zero" a glowing terminal green */
+  font-size: 3rem;
 }
 
 /* 4. Style your featured book accent label */
