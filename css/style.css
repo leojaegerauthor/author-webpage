@@ -331,7 +331,7 @@ h2{
 /* Card titles */
 
 h3{
-    font-size:clamp(1.5rem,2vw,2rem);
+    font-size:clamp(2rem,2vw,2rem);
 }
 
 /* Small headings */
