@@ -2,7 +2,7 @@
 
 /* 1. Paint the Category Banner */
 .hero-category {
-  color: var(--neon-gold); /* Colors "Cyberpunk • Fantasy" a bright gold */
+  color: var(--bronze); 
   font-weight: bold;
 }
 
@@ -14,7 +14,7 @@
 
 /* 3. Add a highlight to your world card titles */
 .world-card h3 {
-  color: var(--led-green); /* Colors "Citizen Zero" a glowing terminal green */
+  color: var(--fiber-cyan); /* Colors "Citizen Zero" a glowing terminal green */
 }
 
 /* 4. Style your featured book accent label */
