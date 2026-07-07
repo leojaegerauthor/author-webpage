@@ -4,7 +4,7 @@ const navbar = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
   // Only activate the hide effect if the user has scrolled past the navbar's height
-  if (window.scrollY > 80) { 
+  if (window.scrollY > 0) { 
     if (window.scrollY > lastScrollY) {
       navbar.classList.add('nav-hidden');    // Scrolling DOWN -> Hide
     } else {
