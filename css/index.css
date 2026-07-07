@@ -1,1 +1,205 @@
+<section id="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <span class="hero-category">
+                Cyberpunk • Fantasy
+            </span>
+
+            <h1>
+                Leo Jaeger
+            </h1>
+
+            <p>
+                Explore cultures
+                Experience humanity
+                Live in new worlds.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="worlds.html"
+                    class="button primary">
+                    Worlds
+                </a>
+
+                <a
+                    href="books.html"
+                    class="button secondary">
+                    Current Project
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="assets/images/hero.webp"
+                alt="Featured artwork">
+        </div>
+    </div>
+</section>
+
+<section id="worlds">
+    <div class="container">
+        <div class="section-title">
+
+            <h2>
+                Polar opposites
+            </h2>
+
+            <p>
+                See how people make choices
+            </p>
+        </div>
+
+        <div class="world-grid">
+            <!-- Cyberpunk -->
+            <article class="card world-card">
+                <img
+                    src="assets/images/cyberpunk.webp"
+                    alt="Cyberpunk">
+
+                <h3>
+                    Cyberpunk
+                </h3>
+
+                <p>
+                    Follow Law on the path to power
+                </p>
+
+                <a
+                    href="worlds.html#cyberpunk"
+                    class="button ghost">
+                    Enter →
+                </a>
+
+            </article>
+            <!-- Fantasy -->
+            <article class="card world-card">
+                <img
+                    src="assets/images/fantasy.webp"
+                    alt="Fantasy">
+
+                <h3>
+                    Fantasy
+                </h3>
+
+                <p>
+                   Follow Agash on his journey
+                </p>
+
+                <a
+                    href="worlds.html#fantasy"
+                    class="button ghost">
+                    Enter →
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="featured">
+    <div class="container">
+        <div class="featured-grid">
+            <div class="book-cover">
+                <img
+                    src="assets/images/book-placeholder.webp"
+                    alt="Current project">
+            </div>
+            <div class="book-description">
+
+                <span>
+                    Current Project
+                </span>
+
+                <h2>
+                    Citizen Zero
+                </h2>
+
+                <p>
+                    A standalone cyberpunk story
+                    exploring memory and identity.
+                </p>
+
+                <a
+                    href="books.html"
+                    class="button primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="development">
+    <div class="container">
+        <div class="section-title">
+            <h2>
+                Currently writing:
+            </h2>
+        </div>
+
+        <div class="three-columns">
+            <article class="card">
+                <h3>
+                    Citizen Zero
+                </h3>
+
+                <p>
+                    Chapter 3 coming soon.
+                </p>
+
+            </article>
+            <article class="card">
+
+                <h3>
+                    The Sphere
+                </h3>
+
+                <p>
+                    Worldbuilding and outlining
+                    continue.
+                </p>
+            </article>
+
+            <article class="card">
+
+                <h3>
+                    Short Stories
+                </h3>
+
+                <p>
+                    Freebie short story planned for late august!
+                </p>
+
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+
+    <div class="container text-center">
+
+        <h2>
+            Continue the Journey
+        </h2>
+
+        <p>
+            Receive occasional updates,
+            exclusive short fiction
+            and release announcements.
+        </p>
+
+        <a
+            href="contact.html"
+            class="button primary">
+            Write me!
+        </a>
+
+    </div>
+</section>
+
+
 
