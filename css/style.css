@@ -185,13 +185,14 @@ select{
     ====================================================== */
 
     --font-heading:
+       "Geist Pixel",
        "Cormorant",
         Georgia,
         "Times New Roman",
         serif;
 
     --font-body:
-        Geist Pixel,
+        "Geist Pixel",
        "Source Sans",
         "Segoe UI",
         Tahoma,
