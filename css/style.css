@@ -156,13 +156,15 @@ select{
     ====================================================== */
 
     --font-heading:
-        "Cormorant",
+        Geist Pixel,
+       "Cormorant",
         Georgia,
         "Times New Roman",
         serif;
 
     --font-body:
-        "Source Sans",
+        Geist Pixel,
+       "Source Sans",
         "Segoe UI",
         Tahoma,
         Arial,
