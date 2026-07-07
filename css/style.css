@@ -325,7 +325,7 @@ h1{
 /* Section titles */
 
 h2{
-    font-size:clamp(2rem,4vw,3rem);
+    font-size:clamp(3rem,4vw,3rem);
 }
 
 /* Card titles */
