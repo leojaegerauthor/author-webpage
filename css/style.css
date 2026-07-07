@@ -139,7 +139,7 @@ select{
 .geistpixel-text {
   font-family: var(--font-pixel);  /* !important; Adding !important forces it over external stylesheets */
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-variation-settings: "ELSH" 0;
 }
@@ -154,6 +154,7 @@ select{
        COLOR PALETTE
     ====================================================== */
 
+   
     --background:#F7F5F0;
     --surface:#FFFFFF;
     --surface-alt:#F1EEE7;
@@ -821,6 +822,9 @@ nav a.active::after{
 ========================================================== */
 
 .card{
+  background-color: var(--surface-alt);  
+  border: 1px solid var(--border);   
+  box-shadow: var(--shadow);         
     display:flex;
     flex-direction:column;
     gap:1.25rem;
