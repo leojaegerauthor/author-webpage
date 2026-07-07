@@ -84,10 +84,10 @@ select{
 
 @font-face{
 
-    font-family:"Cormorant";
+    font-family:"Garamond";
 
-    src:url("../assets/fonts/CormorantGaramond-Regular.woff2")
-    format("woff2");
+    src:url("../assets/fonts/GeistPixel-Regular-VariableFont_ELSH.ttf")
+    format("ttf");
 
     font-weight:400;
 
@@ -95,10 +95,10 @@ select{
 
 @font-face{
 
-    font-family:"Cormorant";
+        font-family:"Garamond";
 
-    src:url("../assets/fonts/CormorantGaramond-Bold.woff2")
-    format("woff2");
+    src:url("../assets/fonts/GeistPixel-Regular-VariableFont_ELSH.ttf")
+    format("ttf");
 
     font-weight:700;
 
@@ -106,10 +106,10 @@ select{
 
 @font-face{
 
-    font-family:"Source Sans";
+       font-family:"Garamond";
 
-    src:url("../assets/fonts/SourceSans3-Regular.woff2")
-    format("woff2");
+    src:url("../assets/fonts/GeistPixel-Regular-VariableFont_ELSH.ttf")
+    format("ttf");
 
     font-weight:400;
 
