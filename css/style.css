@@ -72,7 +72,7 @@ select{
 
 ========================================================== */
 
-
+/*
 @font-face{
 
     font-family:"Geist Pixel";
@@ -113,6 +113,21 @@ select{
   font-style: normal;
   font-variation-settings:
     "ELSH" 0;
+}
+*/
+@font-face {
+  font-family: "Geist Pixel";
+  src: url("../assets/fonts/GeistPixel-Regular-VariableFont_ELSH.ttf") format("truetype"); /* Ensure this file path is accurate */
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geistpixel-text {
+  font-family: "Geist Pixel", sans-serif !important; /* Adding !important forces it over external stylesheets */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ELSH" 0;
 }
 
 /* ==========================================================
