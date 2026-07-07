@@ -84,7 +84,7 @@ select{
 
 @font-face{
 
-    font-family:"Garamond";
+    font-family:"Geist Pixel";
 
     src:url("../assets/fonts/GeistPixel-Regular-VariableFont_ELSH.ttf")
     format("ttf");
@@ -95,18 +95,18 @@ select{
 
 @font-face{
 
-        font-family:"Garamond";
+        font-family:"Geist Pixel";
 
     src:url("../assets/fonts/GeistPixel-Regular-VariableFont_ELSH.ttf")
     format("ttf");
 
-    font-weight:700;
+    font-weight:400;
 
 }
 
 @font-face{
 
-       font-family:"Garamond";
+       font-family:"Geist Pixel";
 
     src:url("../assets/fonts/GeistPixel-Regular-VariableFont_ELSH.ttf")
     format("ttf");
