@@ -72,13 +72,6 @@ select{
 
 ========================================================== */
 
-.cormorant-<class> {
-  font-family: "Cormorant", serif;
-  font-optical-sizing: auto;
-  font-weight:700;
-  font-style: normal;
-}
-
 @font-face{
 
     font-family:"Cormorant";
