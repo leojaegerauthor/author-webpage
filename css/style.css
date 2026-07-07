@@ -137,7 +137,7 @@ select{
 }
 
 .geistpixel-text {
-  font-family: "Geist Pixel", sans-serif  /* !important; Adding !important forces it over external stylesheets */
+  font-family: var(--font-pixel);  /* !important; Adding !important forces it over external stylesheets */
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -197,7 +197,8 @@ select{
         Tahoma,
         Arial,
         sans-serif;
-
+   
+   --font-pixel: "Geist Pixel", sans-serif;
     /* ======================================================
        SPACING
     ====================================================== */
