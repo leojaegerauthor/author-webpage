@@ -14,7 +14,7 @@
 
 /* 3. Add a highlight to your world card titles */
 .world-card h3 {
-  color: var(--fiber-cyan); /* Colors "Citizen Zero" a glowing terminal green */
+  color: var(--hill-green); /* Colors "Citizen Zero" a glowing terminal green */
   font-size: 3rem;
 }
 
