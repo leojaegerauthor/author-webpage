@@ -1,0 +1,23 @@
+
+/* 1. Paint the Category Banner */
+.hero-category {
+  color: var(--bronze); 
+  font-weight: bold;
+}
+
+/* 2. Make the Author Header POP */
+#hero h1 {
+  color: var(--banner-blue); /* Colors "L.Jaeger" a distinct brand blue */
+  font-size: 4rem;
+}
+
+/* 3. Add a highlight to your world card titles */
+.world-card h3 {
+  color: var(--hill-green); /* Colors "Citizen Zero" a glowing terminal green */
+  font-size: 3rem;
+}
+
+/* 4. Style your featured book accent label */
+.book-description span {
+  color: var(--bronze); /* Colors the small "Current Project" tag a earthy bronze */
+}
